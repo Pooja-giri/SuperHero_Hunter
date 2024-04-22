@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Superhero Hunter</title>
+
+     <!------- fontawesome ------->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!------- Custom Stylesheet ------->
+
+     <link rel="stylesheet" href="./css/homepage.css">
+     <link rel="stylesheet" href="./css/favoritespage.css">
+</head>
+
+<body>
+
+     <!------- Navbar ------->
+     
+     <nav class="top navbar">
+          <!-------  Icon and Name ------->
+          <div class="top navbar-brand">
+               <img class="logo" src="logo.PNG" alt="">
+               <a href="./index.html">
+                    <span>Superhero Hunter</span>
+               </a>
+          </div>
+          <!------- Favourites Button ------->
+
+          <div class="top fav-btn">
+               <a class="top link-to-different-page" href="./index.html">
+                    <button class="btn fav-btn"> <i class="fa-solid fa-house"></i> &nbsp; Home</button>
+               </a>
+          </div>
+     </nav>
+
+     <div class="favourite-characters">
+          <div class="top cards-container" id="cards-contain">
+          
+          </div>
+     </div>
+
+     <!------- Tabs for notifying user that character is added or removed from favourites ------->
+     <span data-visiblity="hide" class="remove-tab">Removed From Favourites</span>
+
+     <!------- Script file ------->
+     <script src="./js/favoritespage.js"></script>
+
+</body>
+
+</html>

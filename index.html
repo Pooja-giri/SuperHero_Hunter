@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Superhero Hunter</title>
+
+     <!------- fontawesome ------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!------- Custom Stylesheet ------->
+     <link rel="stylesheet" href="./css/homepage.css">
+
+     <!------- Crypto JS ------->
+     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+          integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="container">
+
+     <!------- Navbar ------->
+
+     <nav class="top navbar">
+          <!-------  Icon and Name ------->
+
+          <div class="top navbar-brand">
+               <img class="logo" src="logo.PNG" alt="">
+               <a href="./index.html">
+                    <span>Superhero Hunter</span>
+               </a>
+          </div>
+          <!------- Favourites Button ------->
+
+          <div class="top fav-btn">
+               <a class="top link-to-different-page" href="./favoritespage.html">
+                    <button class="btn fav-btn"> <i class="fa-solid fa-heart fav-icon"></i> &nbsp; Favourites</button>
+               </a>
+          </div>
+     </nav>
+     <!-- Title for page -->
+     <div class="page-title">
+          <h1>Superhero Hunter</h1>
+     </div>
+
+     <!------- Search Bar and Search Results ------->
+
+     <div class="container searchBar-items">
+          <div class="search-bar-container" class="top">
+               <div class="search-icon-container"><i class="fa-solid fa-magnifying-glass"></i></div>
+               <input id="search-bar" type="text" autocomplete="off" placeholder="Search For Superheros">
+          </div>
+          <ul class="container" id="search-results">          
+          </ul>
+     </div>
+
+     <!------- Tabs for notifying user that character is added or removed from favourites ------->
+
+     <span data-visiblity="hide" class="fav-tab">Added To Favourites</span>
+     <span data-visiblity="hide" class="remove-tab">Removed From Favourites</span>
+
+     <!------- Script file ------->
+     
+     <script src="./js/homepage.js"></script>
+
+</body>
+
+</html>
